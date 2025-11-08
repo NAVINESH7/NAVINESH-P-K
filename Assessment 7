@@ -1,1 +1,31 @@
-
+#include <stdio.h>
+void fun_name(int,int);
+int main()
+{
+   int x,y;
+   printf("Enter the number : ");
+   scanf("%d",&x);
+   fun_name(x,y);
+}
+void fun_name(int x,int y)
+{
+    printf("the Add = %d\n",(x+x));
+    printf("the Sub = %d\n",(x-x));
+    printf("the Mul = %d\n",(x*x));
+    printf("the Dev = %d\n",(x/x));
+    
+    int i=1;
+    y=0;
+    while(i <= x)
+    {
+        y=y+i;
+        i++;
+    }
+    printf("\nsum of the %d deg is : %d\n",x,y);
+    y=1;
+    for(i=1;i<=x;i++)
+    {
+        y=y*i;
+    }
+    printf("\nfact of the deg %d is : %d\n",x,y);
+}
